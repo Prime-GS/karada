@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+
     <title>Bootstrap w/ Vite</title>
   </head>
   <body>
@@ -17,10 +20,10 @@
       </div>
     </div>
 
-    <div class="container-fluid main-section section">
+    <div class="main-section section">
       <div class="container">
         <div class="row">
-          <div class="col-md-10 col-12">
+          <div class="main-text-container col-lg-7 col-12">
             <h1 class="display-1">KARADA-U онлайн тренинг платформа №1</h1>
             <div class="title-box-primary">
               <h1 class="display-2">Усиливаем отделы продаж в 10х</h1>
@@ -49,9 +52,11 @@
               <h2>Рост ваших продаж до 34% за 7 дней</h2>
             </div>
           </div>
-          <div class="main-box-container col-md-2 col-12">
-            <p class="main-box-title">Автор: Юсуп Карада</p>
-            <p class="main-box-title">Тренер №1 по Дорогим Продажам в РК</p>
+          <div class="main-primary-block-container col-lg-5 col-12">
+            <div class="main-primary-block">
+              <span class="main-primary-block-title">Автор: Юсуп Карада <br /></span>
+              <span class="main-primary-block-title">Тренер №1 по Дорогим Продажам в РК</span>
+            </div>
           </div>
         </div>
       </div>
@@ -59,53 +64,44 @@
 
     <div class="video-player-section section">
       <div class="container">
-        <div class="section-title">
-          <h1 class="display-2">Уникальность KARADA-U</h1>
-        </div>
-        <div class="video-player">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/2sMcJgZDFzM?si=pli6MvsyJ8Vhbd78"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+        <div class="col-12">
+          <div class="section-title">
+            <h1 class="display-2">Уникальность KARADA-U</h1>
+          </div>
+          <div class="video-player">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/2sMcJgZDFzM?si=pli6MvsyJ8Vhbd78"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="info-section bg-grey section">
-      <div class="container">
-        <div class="section-title">
-          <h1 class="display-2">Онлайн тренинг платформа №1 для бизнеса</h1>
-        </div>
-
-        <div class="info-block-container">
-          <section class="items-carousel">
-            <div class="items-carousel__item-wrapper" data-js="items-carousel">
-              <div style="height: 100%">
-                <div class="info-block col">
-                  <p class="info-block-number">1</p>
-                  <span>Самая большая база знаний по дорогим продажам и дожиму в Центральной Азии!</span>
-                </div>
-              </div>
-              <div style="height: 100%">
-                <div class="info-block col">
-                  <p class="info-block-number">2</p>
-                  <span>Онлайн справочник для продавцов. Готовые ответы на любые вопросы и возражения!</span>
-                </div>
-              </div>
-              <div style="height: 100%">
-                <div class="info-block col">
-                  <p class="info-block-number">3</p>
-                  <span>Дорогостоящие и редкие знания теперь доступны для каждого бизнеса 24/7/365 дней!</span>
-                </div>
-              </div>
-            </div>
-          </section>
+    <div class="info-section section bg-grey">
+      <div class="section-title">
+        <h1 class="display-2">Онлайн тренинг платформа №1 для бизнеса</h1>
+      </div>
+      <div class="container info-block-container">
+        <div class="owl-carousel 3-items-carousel">
+          <div class="info-block col">
+            <span class="info-block-number">1</span>
+            <span>Самая большая база знаний по дорогим продажам и дожиму в Центральной Азии!</span>
+          </div>
+          <div class="info-block col">
+            <span class="info-block-number">2</span>
+            <span>Онлайн справочник для продавцов. Готовые ответы на любые вопросы и возражения!</span>
+          </div>
+          <div class="info-block col">
+            <span class="info-block-number">3</span>
+            <span>Дорогостоящие и редкие знания теперь доступны для каждого бизнеса 24/7/365 дней!</span>
+          </div>
         </div>
       </div>
     </div>
@@ -115,77 +111,63 @@
         <h1 class="display-2">KARADA-U решает эти боли:</h1>
       </div>
       <div class="container solution-container">
-        <section class="items-carousel">
-          <div class="items-carousel__item-wrapper" data-js="items-carousel">
-            <div style="height: 100%">
-              <div class="solution-item">
-                <h2 class="solution-title">Низкие продажи</h2>
-                <span class="solution-subtitle">Нет системного роста продаж, слабая конверсия на всех этапах</span>
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="solution-item">
-                <h2 class="solution-title">Слабый отдел продаж</h2>
-                <span class="solution-subtitle">Не выполняет план продаж, слабая система прогрева-продаж-дожима</span>
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="solution-item">
-                <h2 class="solution-title">Продавцы не дожимают</h2>
-                <span class="solution-subtitle"
-                  >Ваши продавцы-новички станут профессионалами и будут системно дожимать 90% сделок!</span
-                >
-              </div>
-            </div>
+        <div class="owl-carousel 3-items-carousel">
+          <div class="solution-item">
+            <h2 class="solution-title">Низкие продажи</h2>
+            <span class="solution-subtitle">Нет системного роста продаж, слабая конверсия на всех этапах</span>
           </div>
-        </section>
+          <div class="solution-item">
+            <h2 class="solution-title">Слабый отдел продаж</h2>
+            <span class="solution-subtitle">Не выполняет план продаж, слабая система прогрева-продаж-дожима</span>
+          </div>
+          <div class="solution-item">
+            <h2 class="solution-title">Продавцы не дожимают</h2>
+            <span class="solution-subtitle"
+              >Ваши продавцы-новички станут профессионалами и будут системно дожимать 90% сделок!</span
+            >
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="results-section bg-grey section">
+    <div class="results-section section bg-grey">
       <div class="section-title">
         <h1 class="display-2">Результаты с KARADA-U:</h1>
       </div>
 
       <div class="results-card-container container">
-        <section class="items-carousel">
-          <div class="items-carousel__item-wrapper" data-js="items-carousel">
-            <div style="height: 100%">
-              <div class="results-card">
-                <img class="results-card-img" src="./img/results/results-1.png" alt="" />
-                <h2 class="results-card-title">Взрывной рост продаж в 10х</h2>
-                <p class="results-card-subtitle">
-                  У Вашего бизнеса будет гарантированный 10Х рост продаж в кратчайшие сроки!
-                </p>
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="results-card">
-                <img class="results-card-img" src="./img/results/results-2.png" alt="" />
-                <h2 class="results-card-title">Формирование супер команды</h2>
-                <p class="results-card-subtitle">
-                  Вы сможете быстро нанять и легко взрастить мотивированных супер продавцов!
-                </p>
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="results-card">
-                <img class="results-card-img" src="./img/results/results-3.png" alt="" />
-                <h2 class="results-card-title">Продавцы-дожиматели</h2>
-                <p class="results-card-subtitle">
-                  Ваши продавцы-новички станут профессионалами и будут системно дожимать 90% сделок!
-                </p>
-              </div>
-            </div>
+        <div class="owl-carousel 3-items-carousel">
+          <div class="results-card">
+            <img class="results-card-img" src="./img/results/results-1.png" alt="" />
+            <h2 class="results-card-title">Взрывной рост продаж в 10х</h2>
+            <span class="results-card-subtitle">
+              У Вашего бизнеса будет гарантированный 10Х рост продаж в кратчайшие сроки!
+            </span>
           </div>
-        </section>
+          <div class="results-card">
+            <img class="results-card-img" src="./img/results/results-2.png" alt="" />
+            <h2 class="results-card-title">Формирование супер команды</h2>
+            <span class="results-card-subtitle">
+              Вы сможете быстро нанять и легко взрастить мотивированных супер продавцов!
+            </span>
+          </div>
+          <div class="results-card">
+            <img class="results-card-img" src="./img/results/results-3.png" alt="" />
+            <h2 class="results-card-title">Продавцы-дожиматели</h2>
+            <span class="results-card-subtitle">
+              Ваши продавцы-новички станут профессионалами и будут системно дожимать 90% сделок!
+            </span>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="author-section section">
       <div class="container">
         <div class="row">
-          <div class="author-text-container">
+          <div class="author-img col-lg-6 col-12"></div>
+
+          <div class="author-text-container col-lg-6 col-12">
             <h2 class="top-title">Автор</h2>
             <h1 class="display-1">Юсуп Карада</h1>
             <div class="list">
@@ -215,417 +197,414 @@
       </div>
     </div>
 
-    <div class="courses-section section">
+    <div class="courses-section">
       <div class="section-title">
         <h1 class="display-2">Платформа KARADA-U:</h1>
       </div>
 
-      <div class="courses-container container">
+      <div class="container section">
         <h2 class="courses-title">1. Программа "Дорогие Продажи и Дожим"</h2>
         <div class="carousel-container">
-          <section class="courses-carousel">
-            <div class="courses-carousel__item-wrapper" data-js="courses-carousel">
-              <div style="height: 100%">
-                <div class="courses-card">
-                  <img src="./img/courses-img-1.png" alt="" />
-                  <div class="courses-card-title-container">
-                    <span class="top-title">Курс</span>
-                    <h2 class="courses-card-title">ДОЖИМ КЛИЕНТА</h2>
-                    <div class="courses-card-price-container">
-                      <span class="courses-card-price">$ <span class="line-through"> 30,000</span></span>
-                      <span class="courses-card-price-subtitle">включен в пакет</span>
-                    </div>
-                  </div>
-                  <div class="courses-card-content-container">
-                    <h2 class="courses-card-content-title">123 видеоурока</h2>
-                    <p class="courses-card-content-subtitle">1,000+ приемов дожима любых клиентов</p>
-                    <p class="courses-card-content-subtitle">Готовая программа дожима на 12 месяцев</p>
-                  </div>
+          <div class="owl-carousel 4-items-carousel">
+            <div class="courses-card">
+              <img src="./img/courses-img-1.png" alt="" />
+              <div class="courses-card-title-container">
+                <span class="top-title">Курс</span>
+                <h2 class="courses-card-title">ДОЖИМ КЛИЕНТА</h2>
+                <div class="courses-card-price-container">
+                  <span class="courses-card-price">$ <span class="line-through"> 30,000</span></span>
+                  <span class="courses-card-price-subtitle">включен в пакет</span>
                 </div>
               </div>
-              <div style="height: 100%">
-                <div class="courses-card">
-                  <img src="./img/courses-img-1.png" alt="" />
-                  <div class="courses-card-title-container">
-                    <span class="top-title">Курс</span>
-                    <h2 class="courses-card-title">ПЕРЕГОВОРЫ И ЗАКРЫТЫЕ СДЕЛКИ</h2>
-                    <div class="courses-card-price-container">
-                      <span class="courses-card-price">$ <span class="line-through"> 15,000</span></span>
-                      <span class="courses-card-price-subtitle">включен в пакет</span>
-                    </div>
-                  </div>
-                  <div class="courses-card-content-container">
-                    <h2 class="courses-card-content-title">376 видеоурока</h2>
-                    <p class="courses-card-content-subtitle">1,100+ приемов закрытия любых возражений</p>
-                    <p class="courses-card-content-subtitle">Правила закрытия любой сделки</p>
-                  </div>
-                </div>
-              </div>
-              <div style="height: 100%">
-                <div class="courses-card">
-                  <img src="./img/courses-img-1.png" alt="" />
-                  <div class="courses-card-title-container">
-                    <span class="top-title">Курс</span>
-                    <h2 class="courses-card-title">холодные звонки</h2>
-                    <div class="courses-card-price-container">
-                      <span class="courses-card-price">$ <span class="line-through"> 15,000</span></span>
-                      <span class="courses-card-price-subtitle">включен в пакет</span>
-                    </div>
-                  </div>
-                  <div class="courses-card-content-container">
-                    <h2 class="courses-card-content-title">355 видеоурока</h2>
-                    <p class="courses-card-content-subtitle">1,000+ приемов холодного звонка любым клиентам</p>
-                    <p class="courses-card-content-subtitle">Продажа Блокиратору, ЛВР и ЛПР</p>
-                  </div>
-                </div>
-              </div>
-              <div style="height: 100%">
-                <div class="courses-card">
-                  <img src="./img/courses-img-1.png" alt="" />
-                  <div class="courses-card-title-container">
-                    <span class="top-title">Курс</span>
-                    <h2 class="courses-card-title">МОТИВИРОВАННЫЙ СУПЕР ПРОДАВЕЦ</h2>
-                    <div class="courses-card-price-container">
-                      <span class="courses-card-price">$ <span class="line-through"> 10,000</span></span>
-                      <span class="courses-card-price-subtitle">включен в пакет</span>
-                    </div>
-                  </div>
-                  <div class="courses-card-content-container">
-                    <h2 class="courses-card-content-title">100+ видеоуроков</h2>
-                    <p class="courses-card-content-subtitle">Супер мотивация на продажи</p>
-                    <p class="courses-card-content-subtitle">10Х рост эффективности продавца!</p>
-                  </div>
-                </div>
-              </div>
-              <div style="height: 100%">
-                <div class="courses-card">
-                  <img src="./img/courses-img-1.png" alt="" />
-                  <div class="courses-card-title-container">
-                    <span class="top-title">Курс</span>
-                    <h2 class="courses-card-title">МОТИВИРОВАННЫЙ СУПЕР ПРОДАВЕЦ</h2>
-                    <div class="courses-card-price-container">
-                      <span class="courses-card-price">$ <span class="line-through"> 10,000</span></span>
-                      <span class="courses-card-price-subtitle">включен в пакет</span>
-                    </div>
-                  </div>
-                  <div class="courses-card-content-container">
-                    <h2 class="courses-card-content-title">100+ видеоуроков</h2>
-                    <p class="courses-card-content-subtitle">Супер мотивация на продажи</p>
-                    <p class="courses-card-content-subtitle">10Х рост эффективности продавца!</p>
-                  </div>
-                </div>
-              </div>
-              <div style="height: 100%">
-                <div class="courses-card">
-                  <img src="./img/courses-img-1.png" alt="" />
-                  <div class="courses-card-title-container">
-                    <span class="top-title">Курс</span>
-                    <h2 class="courses-card-title">МОТИВИРОВАННЫЙ СУПЕР ПРОДАВЕЦ</h2>
-                    <div class="courses-card-price-container">
-                      <span class="courses-card-price">$ <span class="line-through"> 10,000</span></span>
-                      <span class="courses-card-price-subtitle">включен в пакет</span>
-                    </div>
-                  </div>
-                  <div class="courses-card-content-container">
-                    <h2 class="courses-card-content-title">100+ видеоуроков</h2>
-                    <p class="courses-card-content-subtitle">Супер мотивация на продажи</p>
-                    <p class="courses-card-content-subtitle">10Х рост эффективности продавца!</p>
-                  </div>
-                </div>
+              <div class="courses-card-content-container">
+                <h2 class="courses-card-content-title">123 видеоурока</h2>
+                <span class="courses-card-content-subtitle">1,000+ приемов дожима любых клиентов</span>
+                <span class="courses-card-content-subtitle">Готовая программа дожима на 12 месяцев</span>
               </div>
             </div>
-          </section>
-        </div>
-      </div>
-
-      <div class="container-fluid bg-grey">
-        <div class="courses-container container">
-          <h2 class="courses-title">2. "Коучинг отдела продаж"</h2>
-          <div class="carousel-container">
-            <section class="courses-carousel">
-              <div class="courses-carousel__item-wrapper" data-js="courses-carousel">
-                <div style="height: 100%">
-                  <div class="courses-card">
-                    <img src="./img/courses-img-2.png" alt="" />
-                    <div class="courses-card-title-container">
-                      <span class="top-title"></span>
-                      <h2 class="courses-card-title">КОУЧИНГ ПО СИСТЕМЕ ПРОДАЖ</h2>
-                      <div class="courses-card-price-container"></div>
-                    </div>
-                    <div class="courses-card-content-container">
-                      <h2 class="courses-card-content-title">Коучинг</h2>
-                      <p class="courses-card-content-subtitle">Алгоритм дорогих продаж</p>
-                      <p class="courses-card-content-subtitle">Приемы, кейсы, ошибки</p>
-                    </div>
-                  </div>
-                </div>
-                <div style="height: 100%">
-                  <div class="courses-card">
-                    <img src="./img/courses-img-2.png" alt="" />
-                    <div class="courses-card-title-container">
-                      <span class="top-title"></span>
-                      <h2 class="courses-card-title">КОУЧИНГ ПО ДОЖИМУ КЛИЕНТОВ</h2>
-                      <div class="courses-card-price-container"></div>
-                    </div>
-                    <div class="courses-card-content-container">
-                      <h2 class="courses-card-content-title">Коучинг</h2>
-                      <p class="courses-card-content-subtitle">Лучшие инструменты дожима</p>
-                      <p class="courses-card-content-subtitle">Приемы, кейсы, ошибки</p>
-                    </div>
-                  </div>
-                </div>
-                <div style="height: 100%">
-                  <div class="courses-card">
-                    <img src="./img/courses-img-2.png" alt="" />
-                    <div class="courses-card-title-container">
-                      <span class="top-title"></span>
-                      <h2 class="courses-card-title">КОУЧИНГ ПО ПЕРЕГОВОРАМ</h2>
-                      <div class="courses-card-price-container"></div>
-                    </div>
-                    <div class="courses-card-content-container">
-                      <h2 class="courses-card-content-title">Коучинг</h2>
-                      <p class="courses-card-content-subtitle">Техники переговоров и закрытия сделок</p>
-                      <p class="courses-card-content-subtitle">Приемы, кейсы, ошибки</p>
-                    </div>
-                  </div>
-                </div>
-                <div style="height: 100%">
-                  <div class="courses-card">
-                    <img src="./img/courses-img-2.png" alt="" />
-                    <div class="courses-card-title-container">
-                      <span class="top-title"></span>
-                      <h2 class="courses-card-title">КОУЧИНГ ПО ХОЛОДНЫМ ЗВОНКАМ</h2>
-                      <div class="courses-card-price-container"></div>
-                    </div>
-                    <div class="courses-card-content-container">
-                      <h2 class="courses-card-content-title">Коучинг</h2>
-                      <p class="courses-card-content-subtitle">Эффективные инструменты холодных звонков</p>
-                      <p class="courses-card-content-subtitle">Приемы, кейсы, ошибки</p>
-                    </div>
-                  </div>
-                </div>
-                <div style="height: 100%">
-                  <div class="courses-card">
-                    <img src="./img/courses-img-2.png" alt="" />
-                    <div class="courses-card-title-container">
-                      <span class="top-title"></span>
-                      <h2 class="courses-card-title">КОУЧИНГ ПО СИСТЕМЕ ПРОДАЖ</h2>
-                      <div class="courses-card-price-container"></div>
-                    </div>
-                    <div class="courses-card-content-container">
-                      <h2 class="courses-card-content-title">Коучинг</h2>
-                      <p class="courses-card-content-subtitle">Алгоритм дорогих продаж</p>
-                      <p class="courses-card-content-subtitle">Приемы, кейсы, ошибки</p>
-                    </div>
-                  </div>
-                </div>
-                <div style="height: 100%">
-                  <div class="courses-card">
-                    <img src="./img/courses-img-2.png" alt="" />
-                    <div class="courses-card-title-container">
-                      <span class="top-title"></span>
-                      <h2 class="courses-card-title">КОУЧИНГ ПО СИСТЕМЕ ПРОДАЖ</h2>
-                      <div class="courses-card-price-container"></div>
-                    </div>
-                    <div class="courses-card-content-container">
-                      <h2 class="courses-card-content-title">Коучинг</h2>
-                      <p class="courses-card-content-subtitle">Алгоритм дорогих продаж</p>
-                      <p class="courses-card-content-subtitle">Приемы, кейсы, ошибки</p>
-                    </div>
-                  </div>
+            <div class="courses-card">
+              <img src="./img/courses-img-1.png" alt="" />
+              <div class="courses-card-title-container">
+                <span class="top-title">Курс</span>
+                <h2 class="courses-card-title">ПЕРЕГОВОРЫ И ЗАКРЫТЫЕ СДЕЛКИ</h2>
+                <div class="courses-card-price-container">
+                  <span class="courses-card-price">$ <span class="line-through"> 15,000</span></span>
+                  <span class="courses-card-price-subtitle">включен в пакет</span>
                 </div>
               </div>
-            </section>
+              <div class="courses-card-content-container">
+                <h2 class="courses-card-content-title">376 видеоурока</h2>
+                <span class="courses-card-content-subtitle">1,100+ приемов закрытия любых возражений</span>
+                <span class="courses-card-content-subtitle">Правила закрытия любой сделки</span>
+              </div>
+            </div>
+            <div class="courses-card">
+              <img src="./img/courses-img-1.png" alt="" />
+              <div class="courses-card-title-container">
+                <span class="top-title">Курс</span>
+                <h2 class="courses-card-title">холодные звонки</h2>
+                <div class="courses-card-price-container">
+                  <span class="courses-card-price">$ <span class="line-through"> 15,000</span></span>
+                  <span class="courses-card-price-subtitle">включен в пакет</span>
+                </div>
+              </div>
+              <div class="courses-card-content-container">
+                <h2 class="courses-card-content-title">355 видеоурока</h2>
+                <span class="courses-card-content-subtitle">1,000+ приемов холодного звонка любым клиентам</span>
+                <span class="courses-card-content-subtitle">Продажа Блокиратору, ЛВР и ЛПР</span>
+              </div>
+            </div>
+            <div class="courses-card">
+              <img src="./img/courses-img-1.png" alt="" />
+              <div class="courses-card-title-container">
+                <span class="top-title">Курс</span>
+                <h2 class="courses-card-title">МОТИВИРОВАННЫЙ СУПЕР ПРОДАВЕЦ</h2>
+                <div class="courses-card-price-container">
+                  <span class="courses-card-price">$ <span class="line-through"> 10,000</span></span>
+                  <span class="courses-card-price-subtitle">включен в пакет</span>
+                </div>
+              </div>
+              <div class="courses-card-content-container">
+                <h2 class="courses-card-content-title">100+ видеоуроков</h2>
+                <span class="courses-card-content-subtitle">Супер мотивация на продажи</span>
+                <span class="courses-card-content-subtitle">10Х рост эффективности продавца!</span>
+              </div>
+            </div>
+            <div class="courses-card">
+              <img src="./img/courses-img-1.png" alt="" />
+              <div class="courses-card-title-container">
+                <span class="top-title">Курс</span>
+                <h2 class="courses-card-title">МОТИВИРОВАННЫЙ СУПЕР ПРОДАВЕЦ</h2>
+                <div class="courses-card-price-container">
+                  <span class="courses-card-price">$ <span class="line-through"> 10,000</span></span>
+                  <span class="courses-card-price-subtitle">включен в пакет</span>
+                </div>
+              </div>
+              <div class="courses-card-content-container">
+                <h2 class="courses-card-content-title">100+ видеоуроков</h2>
+                <span class="courses-card-content-subtitle">Супер мотивация на продажи</span>
+                <span class="courses-card-content-subtitle">10Х рост эффективности продавца!</span>
+              </div>
+            </div>
+            <div class="courses-card">
+              <img src="./img/courses-img-1.png" alt="" />
+              <div class="courses-card-title-container">
+                <span class="top-title">Курс</span>
+                <h2 class="courses-card-title">МОТИВИРОВАННЫЙ СУПЕР ПРОДАВЕЦ</h2>
+                <div class="courses-card-price-container">
+                  <span class="courses-card-price">$ <span class="line-through"> 10,000</span></span>
+                  <span class="courses-card-price-subtitle">включен в пакет</span>
+                </div>
+              </div>
+              <div class="courses-card-content-container">
+                <h2 class="courses-card-content-title">100+ видеоуроков</h2>
+                <span class="courses-card-content-subtitle">Супер мотивация на продажи</span>
+                <span class="courses-card-content-subtitle">10Х рост эффективности продавца!</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="courses-container container">
-        <h2 class="courses-title">3. Курсы, тренинги и мастер классы</h2>
-        <div class="carousel-container">
-          <section class="courses-carousel">
-            <div class="courses-carousel__item-wrapper" data-js="courses-carousel">
-              <div style="height: 100%">
-                <div class="courses-card">
-                  <img src="./img/courses-img-3.png" alt="" />
-                  <div class="courses-card-title-container">
-                    <span class="top-title">Курс</span>
-                    <h2 class="courses-card-title">БОЛЬШИЕ ПРОДАЖИ</h2>
-                    <div class="courses-card-price-container">
-                      <span class="courses-card-price">$ <span class="line-through"> 4,500</span></span>
-                      <span class="courses-card-price-subtitle">включен в пакет</span>
-                    </div>
-                  </div>
-                  <div class="courses-card-content-container">
-                    <h2 class="courses-card-content-title">Курс</h2>
-                    <p class="courses-card-content-subtitle">Набор быстрых инструментов для роста продаж</p>
-                    <p class="courses-card-content-subtitle">Мышление на Большие Продажи</p>
-                  </div>
+      <div class="container-fluid bg-grey">
+        <div class="container section">
+          <h2 class="courses-title">2. "Коучинг отдела продаж"</h2>
+          <div class="carousel-container">
+            <div class="owl-carousel 4-items-carousel">
+              <div class="courses-card">
+                <img src="./img/courses-img-2.png" alt="" />
+                <div class="courses-card-title-container">
+                  <span class="top-title"></span>
+                  <h2 class="courses-card-title">КОУЧИНГ ПО СИСТЕМЕ ПРОДАЖ</h2>
+                  <div class="courses-card-price-container"></div>
+                </div>
+                <div class="courses-card-content-container">
+                  <h2 class="courses-card-content-title">Коучинг</h2>
+                  <span class="courses-card-content-subtitle">Алгоритм дорогих продаж</span>
+                  <span class="courses-card-content-subtitle">Приемы, кейсы, ошибки</span>
                 </div>
               </div>
-              <div style="height: 100%">
-                <div class="courses-card">
-                  <img src="./img/courses-img-3.png" alt="" />
-                  <div class="courses-card-title-container">
-                    <span class="top-title">Курс</span>
-                    <h2 class="courses-card-title">СЛОЖНЫЕ ПЕРЕГОВОРЫ</h2>
-                    <div class="courses-card-price-container">
-                      <span class="courses-card-price">$ <span class="line-through"> 8,000</span></span>
-                      <span class="courses-card-price-subtitle">включен в пакет</span>
-                    </div>
-                  </div>
-                  <div class="courses-card-content-container">
-                    <h2 class="courses-card-content-title">Курс</h2>
-                    <p class="courses-card-content-subtitle">Эффективные техники сложных переговоров</p>
-                    <p class="courses-card-content-subtitle">Приемы, кейсы, ошибки</p>
-                  </div>
+              <div class="courses-card">
+                <img src="./img/courses-img-2.png" alt="" />
+                <div class="courses-card-title-container">
+                  <span class="top-title"></span>
+                  <h2 class="courses-card-title">КОУЧИНГ ПО ДОЖИМУ КЛИЕНТОВ</h2>
+                  <div class="courses-card-price-container"></div>
+                </div>
+                <div class="courses-card-content-container">
+                  <h2 class="courses-card-content-title">Коучинг</h2>
+                  <span class="courses-card-content-subtitle">Лучшие инструменты дожима</span>
+                  <span class="courses-card-content-subtitle">Приемы, кейсы, ошибки</span>
                 </div>
               </div>
-              <div style="height: 100%">
-                <div class="courses-card">
-                  <img src="./img/courses-img-3.png" alt="" />
-                  <div class="courses-card-title-container">
-                    <span class="top-title">Тренинг</span>
-                    <h2 class="courses-card-title">ДОРОГИЕ ПРОДАЖИ И ДОЖИМ</h2>
-                    <div class="courses-card-price-container">
-                      <span class="courses-card-price">$ <span class="line-through"> 10,000</span></span>
-                      <span class="courses-card-price-subtitle">включен в пакет</span>
-                    </div>
-                  </div>
-                  <div class="courses-card-content-container">
-                    <h2 class="courses-card-content-title">Тренинг</h2>
-                    <p class="courses-card-content-subtitle">Живое выступление Юсупа Карада</p>
-                    <p class="courses-card-content-subtitle">Практические задания, практика и разбор</p>
-                  </div>
+              <div class="courses-card">
+                <img src="./img/courses-img-2.png" alt="" />
+                <div class="courses-card-title-container">
+                  <span class="top-title"></span>
+                  <h2 class="courses-card-title">КОУЧИНГ ПО ПЕРЕГОВОРАМ</h2>
+                  <div class="courses-card-price-container"></div>
+                </div>
+                <div class="courses-card-content-container">
+                  <h2 class="courses-card-content-title">Коучинг</h2>
+                  <span class="courses-card-content-subtitle">Техники переговоров и закрытия сделок</span>
+                  <span class="courses-card-content-subtitle">Приемы, кейсы, ошибки</span>
                 </div>
               </div>
-              <div style="height: 100%">
-                <div class="courses-card">
-                  <img src="./img/courses-img-3.png" alt="" />
-                  <div class="courses-card-title-container">
-                    <span class="top-title">Мастер классы</span>
-                    <h2 class="courses-card-title">АЛГОРИТМ ПРОДАЖ</h2>
-                    <div class="courses-card-price-container"></div>
-                  </div>
-                  <div class="courses-card-content-container">
-                    <h2 class="courses-card-content-title">Мастер классы</h2>
-                    <p class="courses-card-content-subtitle">Основные приемы и техники продаж</p>
-                    <p class="courses-card-content-subtitle">Приемы, кейсы, ошибки</p>
-                  </div>
+              <div class="courses-card">
+                <img src="./img/courses-img-2.png" alt="" />
+                <div class="courses-card-title-container">
+                  <span class="top-title"></span>
+                  <h2 class="courses-card-title">КОУЧИНГ ПО ХОЛОДНЫМ ЗВОНКАМ</h2>
+                  <div class="courses-card-price-container"></div>
+                </div>
+                <div class="courses-card-content-container">
+                  <h2 class="courses-card-content-title">Коучинг</h2>
+                  <span class="courses-card-content-subtitle">Эффективные инструменты холодных звонков</span>
+                  <span class="courses-card-content-subtitle">Приемы, кейсы, ошибки</span>
                 </div>
               </div>
-              <div style="height: 100%">
-                <div class="courses-card">
-                  <img src="./img/courses-img-3.png" alt="" />
-                  <div class="courses-card-title-container">
-                    <span class="top-title">Курс</span>
-                    <h2 class="courses-card-title">БОЛЬШИЕ ПРОДАЖИ</h2>
-                    <div class="courses-card-price-container">
-                      <span class="courses-card-price">$ <span class="line-through"> 4,500</span></span>
-                      <span class="courses-card-price-subtitle">включен в пакет</span>
-                    </div>
-                  </div>
-                  <div class="courses-card-content-container">
-                    <h2 class="courses-card-content-title">Курс</h2>
-                    <p class="courses-card-content-subtitle">Набор быстрых инструментов для роста продаж</p>
-                    <p class="courses-card-content-subtitle">Мышление на Большие Продажи</p>
-                  </div>
+              <div class="courses-card">
+                <img src="./img/courses-img-2.png" alt="" />
+                <div class="courses-card-title-container">
+                  <span class="top-title"></span>
+                  <h2 class="courses-card-title">КОУЧИНГ ПО СИСТЕМЕ ПРОДАЖ</h2>
+                  <div class="courses-card-price-container"></div>
+                </div>
+                <div class="courses-card-content-container">
+                  <h2 class="courses-card-content-title">Коучинг</h2>
+                  <span class="courses-card-content-subtitle">Алгоритм дорогих продаж</span>
+                  <span class="courses-card-content-subtitle">Приемы, кейсы, ошибки</span>
                 </div>
               </div>
-              <div style="height: 100%">
-                <div class="courses-card">
-                  <img src="./img/courses-img-3.png" alt="" />
-                  <div class="courses-card-title-container">
-                    <span class="top-title">Курс</span>
-                    <h2 class="courses-card-title">БОЛЬШИЕ ПРОДАЖИ</h2>
-                    <div class="courses-card-price-container">
-                      <span class="courses-card-price">$ <span class="line-through"> 4,500</span></span>
-                      <span class="courses-card-price-subtitle">включен в пакет</span>
-                    </div>
-                  </div>
-                  <div class="courses-card-content-container">
-                    <h2 class="courses-card-content-title">Курс</h2>
-                    <p class="courses-card-content-subtitle">Набор быстрых инструментов для роста продаж</p>
-                    <p class="courses-card-content-subtitle">Мышление на Большие Продажи</p>
-                  </div>
+              <div class="courses-card">
+                <img src="./img/courses-img-2.png" alt="" />
+                <div class="courses-card-title-container">
+                  <span class="top-title"></span>
+                  <h2 class="courses-card-title">КОУЧИНГ ПО СИСТЕМЕ ПРОДАЖ</h2>
+                  <div class="courses-card-price-container"></div>
+                </div>
+                <div class="courses-card-content-container">
+                  <h2 class="courses-card-content-title">Коучинг</h2>
+                  <span class="courses-card-content-subtitle">Алгоритм дорогих продаж</span>
+                  <span class="courses-card-content-subtitle">Приемы, кейсы, ошибки</span>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="container section">
+        <h2 class="courses-title">3. Курсы, тренинги и мастер классы</h2>
+        <div class="carousel-container">
+          <div class="owl-carousel 4-items-carousel">
+            <div class="courses-card">
+              <img src="./img/courses-img-3.png" alt="" />
+              <div class="courses-card-title-container">
+                <span class="top-title">Курс</span>
+                <h2 class="courses-card-title">БОЛЬШИЕ ПРОДАЖИ</h2>
+                <div class="courses-card-price-container">
+                  <span class="courses-card-price">$ <span class="line-through"> 4,500</span></span>
+                  <span class="courses-card-price-subtitle">включен в пакет</span>
+                </div>
+              </div>
+              <div class="courses-card-content-container">
+                <h2 class="courses-card-content-title">Курс</h2>
+                <span class="courses-card-content-subtitle">Набор быстрых инструментов для роста продаж</span>
+                <span class="courses-card-content-subtitle">Мышление на Большие Продажи</span>
+              </div>
+            </div>
+            <div class="courses-card">
+              <img src="./img/courses-img-3.png" alt="" />
+              <div class="courses-card-title-container">
+                <span class="top-title">Курс</span>
+                <h2 class="courses-card-title">СЛОЖНЫЕ ПЕРЕГОВОРЫ</h2>
+                <div class="courses-card-price-container">
+                  <span class="courses-card-price">$ <span class="line-through"> 8,000</span></span>
+                  <span class="courses-card-price-subtitle">включен в пакет</span>
+                </div>
+              </div>
+              <div class="courses-card-content-container">
+                <h2 class="courses-card-content-title">Курс</h2>
+                <span class="courses-card-content-subtitle">Эффективные техники сложных переговоров</span>
+                <span class="courses-card-content-subtitle">Приемы, кейсы, ошибки</span>
+              </div>
+            </div>
+            <div class="courses-card">
+              <img src="./img/courses-img-3.png" alt="" />
+              <div class="courses-card-title-container">
+                <span class="top-title">Тренинг</span>
+                <h2 class="courses-card-title">ДОРОГИЕ ПРОДАЖИ И ДОЖИМ</h2>
+                <div class="courses-card-price-container">
+                  <span class="courses-card-price">$ <span class="line-through"> 10,000</span></span>
+                  <span class="courses-card-price-subtitle">включен в пакет</span>
+                </div>
+              </div>
+              <div class="courses-card-content-container">
+                <h2 class="courses-card-content-title">Тренинг</h2>
+                <span class="courses-card-content-subtitle">Живое выступление Юсупа Карада</span>
+                <span class="courses-card-content-subtitle">Практические задания, практика и разбор</span>
+              </div>
+            </div>
+            <div class="courses-card">
+              <img src="./img/courses-img-3.png" alt="" />
+              <div class="courses-card-title-container">
+                <span class="top-title">Мастер классы</span>
+                <h2 class="courses-card-title">АЛГОРИТМ ПРОДАЖ</h2>
+                <div class="courses-card-price-container"></div>
+              </div>
+              <div class="courses-card-content-container">
+                <h2 class="courses-card-content-title">Мастер классы</h2>
+                <span class="courses-card-content-subtitle">Основные приемы и техники продаж</span>
+                <span class="courses-card-content-subtitle">Приемы, кейсы, ошибки</span>
+              </div>
+            </div>
+            <div class="courses-card">
+              <img src="./img/courses-img-3.png" alt="" />
+              <div class="courses-card-title-container">
+                <span class="top-title">Курс</span>
+                <h2 class="courses-card-title">БОЛЬШИЕ ПРОДАЖИ</h2>
+                <div class="courses-card-price-container">
+                  <span class="courses-card-price">$ <span class="line-through"> 4,500</span></span>
+                  <span class="courses-card-price-subtitle">включен в пакет</span>
+                </div>
+              </div>
+              <div class="courses-card-content-container">
+                <h2 class="courses-card-content-title">Курс</h2>
+                <span class="courses-card-content-subtitle">Набор быстрых инструментов для роста продаж</span>
+                <span class="courses-card-content-subtitle">Мышление на Большие Продажи</span>
+              </div>
+            </div>
+            <div class="courses-card">
+              <img src="./img/courses-img-3.png" alt="" />
+              <div class="courses-card-title-container">
+                <span class="top-title">Курс</span>
+                <h2 class="courses-card-title">БОЛЬШИЕ ПРОДАЖИ</h2>
+                <div class="courses-card-price-container">
+                  <span class="courses-card-price">$ <span class="line-through"> 4,500</span></span>
+                  <span class="courses-card-price-subtitle">включен в пакет</span>
+                </div>
+              </div>
+              <div class="courses-card-content-container">
+                <h2 class="courses-card-content-title">Курс</h2>
+                <span class="courses-card-content-subtitle">Набор быстрых инструментов для роста продаж</span>
+                <span class="courses-card-content-subtitle">Мышление на Большие Продажи</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="advantages-section bg-grey container-fluid section">
+    <div class="advantages-section section bg-grey">
       <div class="section-title">
         <h1 class="display-2">Преимущества KARADA-U</h1>
       </div>
 
       <div class="advantages-container container">
-        <section class="items-carousel">
-          <div class="items-carousel__item-wrapper" data-js="items-carousel">
-            <div style="height: 100%">
-              <div class="advantages-card">
-                <p class="advantages-card-number">1</p>
-                <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
-                <span
-                  >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
-                  результата!</span
-                >
-              </div>
+        <div class="advantages-desctop">
+          <div class="advantages-card col-lg-4 col-6">
+            <span class="advantages-card-number">1</span>
+            <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
+            <span
+              >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
+              результата!</span
+            >
+          </div>
+          <div class="advantages-card col-lg-4 col-6 grey">
+            <span class="advantages-card-number">2</span>
+            <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
+            <span
+              >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
+              результата!</span
+            >
+          </div>
+          <div class="advantages-card col-lg-4 col-6">
+            <span class="advantages-card-number">3</span>
+            <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
+            <span
+              >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
+              результата!</span
+            >
+          </div>
+          <div class="advantages-card col-lg-4 col-6 grey">
+            <span class="advantages-card-number">4</span>
+            <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
+            <span
+              >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
+              результата!</span
+            >
+          </div>
+          <div class="advantages-card col-lg-4 col-6">
+            <span class="advantages-card-number">5</span>
+            <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
+            <span
+              >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
+              результата!</span
+            >
+          </div>
+          <div class="advantages-card col-lg-4 col-6 grey">
+            <span class="advantages-card-number">6</span>
+            <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
+            <span
+              >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
+              результата!</span
+            >
+          </div>
+        </div>
+
+        <div class="advantages-mobile">
+          <div class="owl-carousel 4-items-carousel">
+            <div class="advantages-card">
+              <span class="advantages-card-number">1</span>
+              <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
+              <span
+                >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
+                результата!</span
+              >
             </div>
-            <div style="height: 100%">
-              <div class="advantages-card grey">
-                <p class="advantages-card-number">2</p>
-                <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
-                <span
-                  >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
-                  результата!</span
-                >
-              </div>
+            <div class="advantages-card grey">
+              <span class="advantages-card-number">2</span>
+              <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
+              <span
+                >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
+                результата!</span
+              >
             </div>
-            <div style="height: 100%">
-              <div class="advantages-card">
-                <p class="advantages-card-number">3</p>
-                <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
-                <span
-                  >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
-                  результата!</span
-                >
-              </div>
+            <div class="advantages-card">
+              <span class="advantages-card-number">3</span>
+              <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
+              <span
+                >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
+                результата!</span
+              >
             </div>
-            <div style="height: 100%">
-              <div class="advantages-card grey">
-                <p class="advantages-card-number">4</p>
-                <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
-                <span
-                  >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
-                  результата!</span
-                >
-              </div>
+            <div class="advantages-card grey">
+              <span class="advantages-card-number">4</span>
+              <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
+              <span
+                >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
+                результата!</span
+              >
             </div>
-            <div style="height: 100%">
-              <div class="advantages-card">
-                <p class="advantages-card-number">5</p>
-                <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
-                <span
-                  >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
-                  результата!</span
-                >
-              </div>
+            <div class="advantages-card">
+              <span class="advantages-card-number">5</span>
+              <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
+              <span
+                >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
+                результата!</span
+              >
             </div>
-            <div style="height: 100%">
-              <div class="advantages-card grey">
-                <p class="advantages-card-number">6</p>
-                <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
-                <span
-                  >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
-                  результата!</span
-                >
-              </div>
+            <div class="advantages-card grey">
+              <span class="advantages-card-number">6</span>
+              <h3 class="advantages-card-title">Масштабирование продаж в 10Х</h3>
+              <span
+                >Комплексная программа для быстрого масштабирования продаж и победы над конкурентами. 100% гарантия
+                результата!</span
+              >
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
 
@@ -635,106 +614,73 @@
       </div>
 
       <div class="portfolio-container">
-        <section class="items-carousel">
-          <div class="items-carousel__item-wrapper" data-js="portfolio-carusele">
-            <div style="height: 100%">
-              <div class="portfolio-img-collumn">
-                <img src="./img/portfolio/portfolio-img-1.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-2.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-3.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-4.png" alt="" class="portfolio-img" />
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="portfolio-img-collumn">
-                <img src="./img/portfolio/portfolio-img-5.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-6.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-7.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-8.png" alt="" class="portfolio-img" />
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="portfolio-img-collumn">
-                <img src="./img/portfolio/portfolio-img-9.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-10.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-11.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-12.png" alt="" class="portfolio-img" />
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="portfolio-img-collumn">
-                <img src="./img/portfolio/portfolio-img-13.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-14.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-15.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-16.png" alt="" class="portfolio-img" />
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="portfolio-img-collumn">
-                <img src="./img/portfolio/portfolio-img-17.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-18.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-19.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-20.png" alt="" class="portfolio-img" />
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="portfolio-img-collumn">
-                <img src="./img/portfolio/portfolio-img-21.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-22.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-23.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-24.png" alt="" class="portfolio-img" />
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="portfolio-img-collumn">
-                <img src="./img/portfolio/portfolio-img-1.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-2.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-3.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-4.png" alt="" class="portfolio-img" />
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="portfolio-img-collumn">
-                <img src="./img/portfolio/portfolio-img-5.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-6.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-7.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-8.png" alt="" class="portfolio-img" />
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="portfolio-img-collumn">
-                <img src="./img/portfolio/portfolio-img-9.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-10.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-11.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-12.png" alt="" class="portfolio-img" />
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="portfolio-img-collumn">
-                <img src="./img/portfolio/portfolio-img-13.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-14.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-15.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-16.png" alt="" class="portfolio-img" />
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="portfolio-img-collumn">
-                <img src="./img/portfolio/portfolio-img-17.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-18.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-19.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-20.png" alt="" class="portfolio-img" />
-              </div>
-            </div>
-            <div style="height: 100%">
-              <div class="portfolio-img-collumn">
-                <img src="./img/portfolio/portfolio-img-21.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-22.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-23.png" alt="" class="portfolio-img" />
-                <img src="./img/portfolio/portfolio-img-24.png" alt="" class="portfolio-img" />
-              </div>
-            </div>
+        <div class="owl-carousel 4-items-carousel">
+          <div class="porfolio-img-collumn">
+            <img src="./img/portfolio/portfolio-img-1.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-2.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-3.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-4.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-5.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-6.png" alt="" class="portfolio-img" />
           </div>
-        </section>
+          <div class="porfolio-img-collumn">
+            <img src="./img/portfolio/portfolio-img-7.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-8.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-9.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-10.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-11.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-12.png" alt="" class="portfolio-img" />
+          </div>
+          <div class="porfolio-img-collumn">
+            <img src="./img/portfolio/portfolio-img-13.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-14.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-15.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-16.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-17.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-18.png" alt="" class="portfolio-img" />
+          </div>
+          <div class="porfolio-img-collumn">
+            <img src="./img/portfolio/portfolio-img-19.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-20.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-21.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-22.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-23.png" alt="" class="portfolio-img" />
+            <img src="./img/portfolio/portfolio-img-24.png" alt="" class="portfolio-img" />
+          </div>
+          <div class="owl-carousel 4-items-carousel">
+            <div class="porfolio-img-collumn">
+              <img src="./img/portfolio/portfolio-img-1.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-2.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-3.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-4.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-5.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-6.png" alt="" class="portfolio-img" />
+            </div>
+            <div class="porfolio-img-collumn">
+              <img src="./img/portfolio/portfolio-img-7.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-8.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-9.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-10.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-11.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-12.png" alt="" class="portfolio-img" />
+            </div>
+            <div class="porfolio-img-collumn">
+              <img src="./img/portfolio/portfolio-img-13.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-14.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-15.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-16.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-17.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-18.png" alt="" class="portfolio-img" />
+            </div>
+            <div class="porfolio-img-collumn">
+              <img src="./img/portfolio/portfolio-img-19.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-20.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-21.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-22.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-23.png" alt="" class="portfolio-img" />
+              <img src="./img/portfolio/portfolio-img-24.png" alt="" class="portfolio-img" />
+            </div>
+        </div>
       </div>
     </div>
 
@@ -753,152 +699,152 @@
               <div class="items-carousel__item-wrapper" data-js="reviews-carusele" id="review-text-carusele">
                 <div style="height: 100%">
                   <div class="review-card">
-                    <p class="review-card-title">
+                    <span class="review-card-title">
                       «Продажи увеличились на 30%. Менеджеры стали продавать легко. Клиенты стали реже просить скидку.
                       Мы улучшили сервис и подняли цены. Платформа очень удобная, заточена на Казахстан. Рекомендую!»
-                    </p>
+                    </span>
                     <div class="review-card-author-container">
-                      <p class="review-card-author">Руслан Гани</p>
-                      <p class="review-card-company">Собственник "Roll expert"</p>
+                      <span class="review-card-author">Руслан Гани</span>
+                      <span class="review-card-company">Собственник "Roll expert"</span>
                     </div>
                   </div>
                 </div>
                 <div style="height: 100%">
                   <div class="review-card">
-                    <p class="review-card-title">
+                    <span class="review-card-title">
                       «Подготовка наших сотрудников проводится на профессиональном уровне, весь процесс обучения
                       сопровождается разъяснениями и примерами!»
-                    </p>
+                    </span>
                     <div class="review-card-author-container">
-                      <p class="review-card-author">Салтанат Сакирова</p>
-                      <p class="review-card-company">Директор по продажам "AVA Qazaqstan"</p>
+                      <span class="review-card-author">Салтанат Сакирова</span>
+                      <span class="review-card-company">Директор по продажам "AVA Qazaqstan"</span>
                     </div>
                   </div>
                 </div>
                 <div style="height: 100%">
                   <div class="review-card">
-                    <p class="review-card-title">
+                    <span class="review-card-title">
                       «Юсуп №1 по продажам! Мы подняли продажи на +30%! Несмотря на мой 15-летний опыт, я учусь новому.
                       Мы всей командой обучаемся у него. Если у Вас проблемы с продажами, я рекомендую Юсупа!»
-                    </p>
+                    </span>
                     <div class="review-card-author-container">
-                      <p class="review-card-author">Руслан Шефер</p>
-                      <p class="review-card-company">Собственник "Shefer Group"</p>
+                      <span class="review-card-author">Руслан Шефер</span>
+                      <span class="review-card-company">Собственник "Shefer Group"</span>
                     </div>
                   </div>
                 </div>
                 <div style="height: 100%">
                   <div class="review-card">
-                    <p class="review-card-title">
+                    <span class="review-card-title">
                       «Продажи увеличились на 30%. Менеджеры стали продавать легко. Клиенты стали реже просить скидку.
                       Мы улучшили сервис и подняли цены. Платформа очень удобная, заточена на Казахстан. Рекомендую!»
-                    </p>
+                    </span>
                     <div class="review-card-author-container">
-                      <p class="review-card-author">Руслан Гани</p>
-                      <p class="review-card-company">Собственник "Roll expert"</p>
+                      <span class="review-card-author">Руслан Гани</span>
+                      <span class="review-card-company">Собственник "Roll expert"</span>
                     </div>
                   </div>
                 </div>
                 <div style="height: 100%">
                   <div class="review-card">
-                    <p class="review-card-title">
+                    <span class="review-card-title">
                       «Подготовка наших сотрудников проводится на профессиональном уровне, весь процесс обучения
                       сопровождается разъяснениями и примерами!»
-                    </p>
+                    </span>
                     <div class="review-card-author-container">
-                      <p class="review-card-author">Салтанат Сакирова</p>
-                      <p class="review-card-company">Директор по продажам "AVA Qazaqstan"</p>
+                      <span class="review-card-author">Салтанат Сакирова</span>
+                      <span class="review-card-company">Директор по продажам "AVA Qazaqstan"</span>
                     </div>
                   </div>
                 </div>
                 <div style="height: 100%">
                   <div class="review-card">
-                    <p class="review-card-title">
+                    <span class="review-card-title">
                       «Юсуп №1 по продажам! Мы подняли продажи на +30%! Несмотря на мой 15-летний опыт, я учусь новому.
                       Мы всей командой обучаемся у него. Если у Вас проблемы с продажами, я рекомендую Юсупа!»
-                    </p>
+                    </span>
                     <div class="review-card-author-container">
-                      <p class="review-card-author">Руслан Шефер</p>
-                      <p class="review-card-company">Собственник "Shefer Group"</p>
+                      <span class="review-card-author">Руслан Шефер</span>
+                      <span class="review-card-company">Собственник "Shefer Group"</span>
                     </div>
                   </div>
                 </div>
                 <div style="height: 100%">
                   <div class="review-card">
-                    <p class="review-card-title">
+                    <span class="review-card-title">
                       «Продажи увеличились на 30%. Менеджеры стали продавать легко. Клиенты стали реже просить скидку.
                       Мы улучшили сервис и подняли цены. Платформа очень удобная, заточена на Казахстан. Рекомендую!»
-                    </p>
+                    </span>
                     <div class="review-card-author-container">
-                      <p class="review-card-author">Руслан Гани</p>
-                      <p class="review-card-company">Собственник "Roll expert"</p>
+                      <span class="review-card-author">Руслан Гани</span>
+                      <span class="review-card-company">Собственник "Roll expert"</span>
                     </div>
                   </div>
                 </div>
                 <div style="height: 100%">
                   <div class="review-card">
-                    <p class="review-card-title">
+                    <span class="review-card-title">
                       «Подготовка наших сотрудников проводится на профессиональном уровне, весь процесс обучения
                       сопровождается разъяснениями и примерами!»
-                    </p>
+                    </span>
                     <div class="review-card-author-container">
-                      <p class="review-card-author">Салтанат Сакирова</p>
-                      <p class="review-card-company">Директор по продажам "AVA Qazaqstan"</p>
+                      <span class="review-card-author">Салтанат Сакирова</span>
+                      <span class="review-card-company">Директор по продажам "AVA Qazaqstan"</span>
                     </div>
                   </div>
                 </div>
                 <div style="height: 100%">
                   <div class="review-card">
-                    <p class="review-card-title">
+                    <span class="review-card-title">
                       «Юсуп №1 по продажам! Мы подняли продажи на +30%! Несмотря на мой 15-летний опыт, я учусь новому.
                       Мы всей командой обучаемся у него. Если у Вас проблемы с продажами, я рекомендую Юсупа!»
-                    </p>
+                    </span>
                     <div class="review-card-author-container">
-                      <p class="review-card-author">Руслан Шефер</p>
-                      <p class="review-card-company">Собственник "Shefer Group"</p>
+                      <span class="review-card-author">Руслан Шефер</span>
+                      <span class="review-card-company">Собственник "Shefer Group"</span>
                     </div>
                   </div>
                 </div>
                 <div style="height: 100%">
                   <div class="review-card">
-                    <p class="review-card-title">
+                    <span class="review-card-title">
                       «Продажи увеличились на 30%. Менеджеры стали продавать легко. Клиенты стали реже просить скидку.
                       Мы улучшили сервис и подняли цены. Платформа очень удобная, заточена на Казахстан. Рекомендую!»
-                    </p>
+                    </span>
                     <div class="review-card-author-container">
-                      <p class="review-card-author">Руслан Гани</p>
-                      <p class="review-card-company">Собственник "Roll expert"</p>
+                      <span class="review-card-author">Руслан Гани</span>
+                      <span class="review-card-company">Собственник "Roll expert"</span>
                     </div>
                   </div>
                 </div>
                 <div style="height: 100%">
                   <div class="review-card">
-                    <p class="review-card-title">
+                    <span class="review-card-title">
                       «Подготовка наших сотрудников проводится на профессиональном уровне, весь процесс обучения
                       сопровождается разъяснениями и примерами!»
-                    </p>
+                    </span>
                     <div class="review-card-author-container">
-                      <p class="review-card-author">Салтанат Сакирова</p>
-                      <p class="review-card-company">Директор по продажам "AVA Qazaqstan"</p>
+                      <span class="review-card-author">Салтанат Сакирова</span>
+                      <span class="review-card-company">Директор по продажам "AVA Qazaqstan"</span>
                     </div>
                   </div>
                 </div>
                 <div style="height: 100%">
                   <div class="review-card">
-                    <p class="review-card-title">
+                    <span class="review-card-title">
                       «Юсуп №1 по продажам! Мы подняли продажи на +30%! Несмотря на мой 15-летний опыт, я учусь новому.
                       Мы всей командой обучаемся у него. Если у Вас проблемы с продажами, я рекомендую Юсупа!»
-                    </p>
+                    </span>
                     <div class="review-card-author-container">
-                      <p class="review-card-author">Руслан Шефер</p>
-                      <p class="review-card-company">Собственник "Shefer Group"</p>
+                      <span class="review-card-author">Руслан Шефер</span>
+                      <span class="review-card-company">Собственник "Shefer Group"</span>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
           </div>
-          <div class="reviews-container video-review" id="review-video-carusele">
+          <!-- <div class="reviews-container video-review" id="review-video-carusele">
             <section class="items-carousel">
               <div class="items-carousel__item-wrapper" data-js="video-reviews-carusele">
                 <div style="height: 100%">
@@ -1023,12 +969,12 @@
                 </div>
               </div>
             </section>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
 
-    <div class="trust-section section bg-grey container-fluid">
+    <div class="trust-section section container-fluid">
       <div class="section-title">
         <h1 class="display-2">KARADA доверяют</h1>
       </div>
@@ -1095,11 +1041,11 @@
                   </div>
 
                   <div class="cost-content-text-container">
-                    <p class="cost-content-text">Ценность обучения <span class="blue">$1,000,000</span></p>
-                    <p class="cost-content-text">
+                    <span class="cost-content-text">Ценность обучения <span class="blue">$1,000,000</span></span>
+                    <span class="cost-content-text">
                       В пакет входит до <span class="blue">30 аккаунтов</span> на платформу
-                    </p>
-                    <p class="cost-content-text">Доступ <span class="blue">на 12 месяцев</span></p>
+                    </span>
+                    <span class="cost-content-text">Доступ <span class="blue">на 12 месяцев</span></span>
                   </div>
 
                   <div class="line"></div>
@@ -1109,9 +1055,11 @@
                     <div class="cost-price"><span class="line-through">10 000 000</span> тг/год</div>
                     <div class="cost-price-title">БЕСПЛАТНО</div>
                     <div class="">
-                      <p class="cost-price-subtitle"><span class="blue">*</span>Курсы предоставляются бесплатно</p>
-                      <p class="cost-price-subtitle">Оплата только за сервер и тех.поддержку</p>
-                      <p class="cost-price-subtitle"><span class="blue">всего 42 000 тг/мес</span></p>
+                      <span class="cost-price-subtitle"
+                        ><span class="blue">*</span>Курсы предоставляются бесплатно</span
+                      >
+                      <span class="cost-price-subtitle">Оплата только за сервер и тех.поддержку</span>
+                      <span class="cost-price-subtitle"><span class="blue">всего 42 000 тг/мес</span></span>
                     </div>
                   </div>
                 </div>
@@ -1156,11 +1104,11 @@
                   </div>
 
                   <div class="cost-content-text-container">
-                    <p class="cost-content-text">Ценность обучения <span class="blue">$1,000,000</span></p>
-                    <p class="cost-content-text">
+                    <span class="cost-content-text">Ценность обучения <span class="blue">$1,000,000</span></span>
+                    <span class="cost-content-text">
                       В пакет входит до <span class="blue">10 аккаунтов</span> на платформу
-                    </p>
-                    <p class="cost-content-text">Доступ <span class="blue">на 12 месяцев</span></p>
+                    </span>
+                    <span class="cost-content-text">Доступ <span class="blue">на 12 месяцев</span></span>
                   </div>
 
                   <div class="line"></div>
@@ -1170,9 +1118,11 @@
                     <div class="cost-price"><span class="line-through">10 000 000</span> тг/год</div>
                     <div class="cost-price-title">БЕСПЛАТНО</div>
                     <div class="">
-                      <p class="cost-price-subtitle"><span class="blue">*</span>Курсы предоставляются бесплатно</p>
-                      <p class="cost-price-subtitle">Оплата только за сервер и тех.поддержку</p>
-                      <p class="cost-price-subtitle"><span class="blue">всего 25 000 тг/мес</span></p>
+                      <span class="cost-price-subtitle"
+                        ><span class="blue">*</span>Курсы предоставляются бесплатно</span
+                      >
+                      <span class="cost-price-subtitle">Оплата только за сервер и тех.поддержку</span>
+                      <span class="cost-price-subtitle"><span class="blue">всего 25 000 тг/мес</span></span>
                     </div>
                   </div>
                 </div>
@@ -1183,7 +1133,7 @@
       </div>
     </div>
 
-    <div class="slogan-section section bg-grey container-fluid">
+    <div class="slogan-section section container-fluid">
       <h2 class="slogan-title">“Продавать дешево могут все. <br />Продовать дорого и дожимать - только обученные”</h2>
       <h2 class="slogan-author">Юсуп Карада</h2>
     </div>
@@ -1213,25 +1163,22 @@
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="module" src="./js/main.js"></script>
-    <script async src="https://ga.jspm.io/npm:es-module-shims@1.5.5/dist/es-module-shims.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="module">
-      import * as bootstrap from 'bootstrap'
-      document.querySelectorAll('[data-bs-toggle="popover"]').forEach((popover) => {
-        new bootstrap.Popover(popover)
-      })
-    </script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="importmap">
       {
         "imports": {
-          "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.js",
-          "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.esm.min.js"
+          "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js",
+          "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.esm.min.js"
         }
       }
     </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
