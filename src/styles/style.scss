@@ -103,16 +103,16 @@ body {
   background: linear-gradient(90deg, rgba(246, 250, 255, 1) 0%, rgba(223, 228, 234, 1) 100%);
 }
 
+.container {
+  @media screen and (max-width: 768px) {
+    padding: 0 15px;
+  }
+}
+
 .section {
   padding: 100px 0;
   @media screen and (max-width: 768px) {
     padding: 40px 0;
-  }
-}
-
-.container {
-  @media screen and (max-width: 768px) {
-    padding: 0 15px;
   }
 }
 
@@ -307,7 +307,7 @@ h6 {
 
     @media screen and (max-width: 992px) {
       background-size: 60%;
-      background-position: center;
+      background-position: top;
     }
     .main-primary-block {
       max-width: 450px;
@@ -425,6 +425,9 @@ h6 {
     @media screen and (max-width: 786px) {
       margin-top: 32px;
     }
+    .owl-item {
+      height: 100%;
+    }
 
     .results-card {
       position: relative;
@@ -435,6 +438,8 @@ h6 {
 
       display: flex;
       margin: 0 12px;
+      min-height: 370px;
+      max-height: 100%;
       .results-card-img {
         position: absolute;
         z-index: 1;
@@ -483,102 +488,107 @@ h6 {
   background-size: cover;
   color: $white;
 
-  @media screen and (max-width: 1400px) {
-    background-position: 35% 100%;
-  }
-  @media screen and (max-width: 992px) {
-    background-size: 100% 120%;
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    background-image: url('../img/author-bg-mobile.png');
-    padding-bottom: 260px;
-  }
-
-  .author-text-container {
-    width: 55%;
-    margin-left: 45%;
+  .author-container {
+    display: flex;
+    flex-direction: row;
 
     @media screen and (max-width: 992px) {
-      margin-left: 0;
-      width: 100%;
+      flex-direction: column-reverse;
     }
-    .top-title {
-      font-size: 36px;
-      font-weight: 500;
-      color: #b0d2ef;
-      text-transform: uppercase;
 
+    .author-img {
+      background-image: url('../img/author-removedbg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
       @media screen and (max-width: 992px) {
-        font-size: 16px;
+        height: 270px;
+        background-size: contain;
       }
     }
 
-    .display-1 {
-      font-weight: 800;
-      text-transform: uppercase;
+    .author-text-container {
+      padding: 100px 0;
       @media screen and (max-width: 992px) {
-        font-size: 32px;
+        padding: 40px 0 0;
       }
-    }
 
-    .list {
-      margin-top: 60px;
-      @media screen and (max-width: 992px) {
-        margin-top: 20px;
+      .top-title {
+        font-size: 36px;
+        font-weight: 500;
+        color: #b0d2ef;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 992px) {
+          font-size: 16px;
+        }
       }
-      .list-item {
+
+      .display-1 {
+        font-weight: 800;
+        text-transform: uppercase;
+        @media screen and (max-width: 992px) {
+          font-size: 32px;
+        }
+      }
+
+      .list {
+        margin-top: 60px;
+        @media screen and (max-width: 992px) {
+          margin-top: 20px;
+        }
+        .list-item {
+          display: flex;
+          flex-direction: row;
+          .display-3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #eef1f7;
+            @media screen and (max-width: 992px) {
+              font-size: 14px;
+              font-weight: 500;
+            }
+
+            &::before {
+              content: '•';
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+      .author-text-box {
+        width: 100%;
+        margin-top: 60px;
+        padding: 24px;
+
+        color: $white;
+
         display: flex;
-        flex-direction: row;
-        .display-3 {
-          font-size: 22px;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (max-width: 992px) {
+          margin-top: 24px;
+          padding: 0;
+        }
+
+        span {
+          font-size: 18px;
+          font-style: italic;
+          font-weight: 500;
+          @media screen and (max-width: 992px) {
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+
+        h2 {
+          margin-top: 24px;
+          margin-left: auto;
+          font-size: 20px;
           font-weight: 600;
-          color: #eef1f7;
           @media screen and (max-width: 992px) {
             font-size: 14px;
-            font-weight: 500;
           }
-
-          &::before {
-            content: '•';
-            margin-right: 10px;
-          }
-        }
-      }
-    }
-
-    .author-text-box {
-      width: 100%;
-      height: 220px;
-      margin-top: 60px;
-      padding: 24px;
-
-      color: $white;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      @media screen and (max-width: 992px) {
-        margin-top: 24px;
-        padding: 0;
-      }
-
-      span {
-        font-size: 18px;
-        font-style: italic;
-        font-weight: 500;
-        @media screen and (max-width: 992px) {
-          font-size: 12px;
-          font-weight: 400;
-        }
-      }
-
-      h2 {
-        margin-top: 24px;
-        margin-left: auto;
-        font-size: 20px;
-        font-weight: 600;
-        @media screen and (max-width: 992px) {
-          font-size: 14px;
         }
       }
     }
@@ -586,133 +596,134 @@ h6 {
 }
 
 .courses-section {
-  padding-top: 100px;
-  .courses-title {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 43.2px;
-    letter-spacing: 0.02em;
-    color: #363535;
-  }
+  .courses-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    .courses-title {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 43.2px;
+      letter-spacing: 0.02em;
+      color: #363535;
+      margin-bottom: 60px;
 
-  .carousel-container {
-    margin-top: 60px;
-  }
-
-  .courses-card {
-    position: relative;
-    height: 430px;
-
-    display: flex;
-    flex-direction: column;
-
-    border: 2px solid $info;
-    border-bottom: #0067c700;
-    border-radius: 27px 27px 24px 24px;
-
-    @media screen and (max-width: 768px) {
-      width: 100%;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
     }
-
-    img {
-      position: absolute;
-      width: 100%;
-      height: 252px;
-      z-index: -1;
+    .carousel-container {
+      margin-top: 60px;
     }
-
-    .courses-card-title-container {
-      padding: 10px;
-      height: 252px;
-      padding-bottom: 16px;
-      background: #01163580;
-      border-radius: 27px 27px 0 0;
-      color: #bec2c8;
+    .courses-card {
+      position: relative;
+      height: 430px;
 
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+      overflow: hidden;
 
-      .top-title {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 30px;
-        margin-top: 10px;
+      border: 2px solid $info;
+      border-bottom: #0067c700;
+      border-radius: 27px;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
       }
 
-      .courses-card-title {
-        margin-bottom: 0;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 33.6px;
-        text-align: center;
-        text-transform: uppercase;
-        color: $white;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 252px;
+        z-index: -1;
       }
 
-      .courses-card-price-container {
+      .courses-card-title-container {
+        padding: 10px;
+        height: 252px;
+        padding-bottom: 16px;
+        background: #011635e5;
+        color: #bec2c8;
+
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
-        .courses-card-price {
-          font-size: 28px;
+        .top-title {
+          font-size: 20px;
           font-weight: 600;
-          line-height: 33.6px;
-          text-align: center;
-
-          .line-through {
-            text-decoration: line-through;
-          }
+          line-height: 30px;
+          margin-top: 10px;
         }
 
-        .courses-card-price-subtitle {
-          font-size: 20px;
+        .courses-card-title {
+          margin-bottom: 0;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 33.6px;
+          text-align: center;
+          text-transform: uppercase;
+          color: $white;
+        }
+
+        .courses-card-price-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .courses-card-price {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 33.6px;
+            text-align: center;
+
+            .line-through {
+              text-decoration: line-through;
+            }
+          }
+
+          .courses-card-price-subtitle {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: center;
+          }
+        }
+      }
+      .courses-card-content-container {
+        height: 200px;
+        margin-top: auto;
+        padding: 24px 12px 32px;
+        background: $blue;
+
+        .courses-card-content-title {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 0.02em;
+          color: $primary;
+          text-align: center;
+          margin-bottom: 24px;
+        }
+
+        .courses-card-content-subtitle {
+          font-size: 16px;
           font-weight: 500;
           line-height: 24px;
           letter-spacing: 0.02em;
-          text-align: center;
+          color: #101010;
+          margin: 0;
+
+          &::before {
+            content: '•';
+            margin-right: 8px;
+            color: rgba(0, 74, 158, 0.4);
+          }
         }
       }
     }
-    .courses-card-content-container {
-      height: 200px;
-      margin-top: auto;
-      padding: 24px 12px 32px;
-      background: $blue;
-      border-radius: 0 0 24px 24px;
-
-      .courses-card-content-title {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 24px;
-        letter-spacing: 0.02em;
-        color: $primary;
-        text-align: center;
-        margin-bottom: 24px;
-      }
-
-      .courses-card-content-subtitle {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: 0.02em;
-        color: #101010;
-        margin: 0;
-
-        &::before {
-          content: '•';
-          margin-right: 8px;
-          color: rgba(0, 74, 158, 0.4);
-        }
-      }
-    }
-  }
-
-  .container-fluid {
-    padding-top: 50px;
   }
 }
 
@@ -781,32 +792,65 @@ h6 {
 }
 
 .portfolio-section {
-  .portfolio-container {
+  .portfolio-carousel {
     margin-top: 80px;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
       margin-top: 32px;
     }
+
     .portfolio-img-collumn {
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    .portfolio-img {
+      width: 120px;
+      height: 120px;
 
-      .portfolio-img {
-        width: 120px;
-        height: 120px;
-
-        @media screen and (max-width: 992px) {
-          width: 65px;
-          height: 65px;
-        }
+      @media screen and (max-width: 768px) {
+        width: 65px;
+        height: 65px;
       }
     }
   }
 }
-
 .reviews-section {
   background: radial-gradient(circle, rgba(0, 104, 199, 1) 0%, rgba(0, 10, 44, 1) 100%);
   overflow: hidden;
+
+  .review-carousel-dots {
+    @extend .carousel-dots;
+    .active {
+      span {
+        background: $white;
+      }
+    }
+    .review-dot {
+      @extend .dot;
+
+      span {
+        border: 1px solid $white;
+      }
+    }
+  }
+
+  .mobile-dots {
+    @extend .carousel-dots;
+    display: none;
+    @media screen and (max-width: 992px) {
+      display: flex;
+    }
+  }
+
+  .review-arrows-container {
+    @extend .arrows-container;
+
+    .review-arrow {
+      border: none;
+      background: none;
+    }
+  }
 
   .white-section-title {
     color: $white;
@@ -932,14 +976,12 @@ h6 {
     }
 
     .video-review-card {
+      margin: 0 auto;
       height: 440px;
       width: 220px;
       padding: 14px 14px 12px;
       background: none;
       background: url('../img/video-review-bg.png');
-      @media screen and (max-width: 768px) {
-        margin: 0 auto;
-      }
       .video {
         border-radius: 10px;
       }
@@ -1017,8 +1059,57 @@ h6 {
 }
 
 .cost-section {
+  .mobile-cost-nav {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      width: 100%;
+      gap: 0;
+      justify-content: space-around;
+      margin-top: 32px;
+    }
+
+    .cost-nav-title {
+      @extend .nav-title;
+      margin-right: 24px;
+      color: #00499e66;
+
+      h2::after {
+        display: block;
+        content: ' ';
+        height: 2px;
+        width: 100%;
+        background: $white;
+        background: radial-gradient(
+          49.89% 1126.41% at 50.11% 50%,
+          rgba(0, 73, 158, 0.4) 0%,
+          rgba(0, 73, 158, 0.01) 100%
+        );
+      }
+    }
+    .cost-nav-active {
+      @extend .cost-nav-title;
+      margin-right: 24px;
+      color: $primary;
+
+      h2::after {
+        display: block;
+        content: ' ';
+        height: 2px;
+        width: 100%;
+        background: $white;
+        background: radial-gradient(49.89% 1126.41% at 50.11% 50%, #00499e 0%, rgba(0, 73, 158, 0.01) 100%);
+      }
+    }
+  }
+
   .cost-card-container {
+    display: flex;
+    flex-direction: row;
     margin-top: 80px;
+    overflow: hidden;
+    gap: 5%;
 
     @media screen and (max-width: 768px) {
       margin-top: 32px;
@@ -1026,8 +1117,8 @@ h6 {
 
     .cost-card {
       position: relative;
-      width: 80%;
       margin: 0 auto;
+      overflow: hidden;
       border-radius: 27px;
       border: 2px solid $info;
       border-bottom: none;
@@ -1036,7 +1127,6 @@ h6 {
         position: absolute;
         width: 100%;
         height: 260px;
-        border-radius: 27px 27px 0 0;
         z-index: -1;
       }
 
@@ -1046,7 +1136,6 @@ h6 {
         padding-bottom: 16px;
         background: rgba(1, 22, 53, 0.85);
         color: #bec2c8;
-        border-radius: 27px 27px 0 0;
 
         display: flex;
         flex-direction: column;
@@ -1076,7 +1165,7 @@ h6 {
       }
 
       .cost-content {
-        padding: 24px 70px 60px 70px;
+        padding: 24px 15px;
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -1169,6 +1258,19 @@ h6 {
             color: #595757;
             .blue {
               color: $info;
+            }
+          }
+          .cost-price-submit {
+            margin-top: 40px;
+            margin-bottom: 60px;
+            border-radius: 24px;
+            color: $white;
+            font-size: 20px;
+            font-weight: 600;
+            @media screen and (max-width: 768px) {
+              margin-top: 20px;
+              margin-bottom: 30px;
+              font-size: 16px;
             }
           }
         }
@@ -1309,6 +1411,74 @@ h6 {
           height: 34px;
         }
       }
+    }
+  }
+}
+
+.form-container {
+  padding: 28px 16px;
+  position: fixed;
+  left: auto;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+
+  width: 330px;
+  height: 400px;
+  background: $blue;
+  border-radius: 20px;
+
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 6px;
+    right: 16px;
+    font-size: 32px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .form-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: $primary;
+  }
+
+  .form-subtitle {
+    width: 70%;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 10px;
+    border-left: 2px solid $primary;
+  }
+
+  .form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .form-input {
+      width: 100%;
+      padding: 16px 24px;
+
+      border: 1px solid $info;
+      border-bottom: none;
+      border-radius: 20px;
+    }
+
+    .form-submit {
+      margin-top: 24px;
+      border-radius: 24px;
     }
   }
 }
